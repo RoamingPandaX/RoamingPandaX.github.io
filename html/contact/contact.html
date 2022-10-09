@@ -3,10 +3,16 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Securities Studying Club - Never Back Down</title>
-  <link rel="stylesheet" href="style/style.css">
+  
+  <!-- gg fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- css files -->
+  <link rel="stylesheet" href="/style/home/style.css">
+  <link rel="stylesheet" href="/style/contact/style_contact.css">
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XE0JP45WDF"></script>
   <script>
@@ -21,17 +27,17 @@
 <!--------Header----------------->
 <section class ="sub-header">
   <nav>
-    <a href="index.html"><img src="SeSC/Logo_small_trans.png" target="_blank"></a>
+    <a href="index.html"><img src="/SeSC/Logo_small_trans.png" target="_blank"></a>
     <div class="nav-links" id="navLinks">
       <ion-icon class="fa fa-times" name="close-outline" onclick="hideMenu()"></ion-icon>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT US</a></li>
-          <li><a href="fsc.html">FSC</a></li>
-          <li><a href="blog.html">BLOG</a></li>
-          <!---<li><a href="#">TOOLS</a></li>--->
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
+      <ul>
+        <li class="nav"><a href="/html/home/index.html">HOME</a></li>
+        <li class="nav"><a href="/html/aboutUs/about.html">ABOUT US</a></li>
+        <li class="nav"><a href="/html/fsc/fsc.html">FSC</a></li>
+        <li class="nav"><a href="/html/blog/blog.html">BLOG</a></li>
+        <li class="nav"><a href="/html/recruitment/recruitment.html">RECRUITMENT</a></li> 
+        <li class="nav"><a href="/html/contact/contact.html">CONTACT</a></li>   
+      </ul>   
     </div>
     <ion-icon class="fa fa-bars" name="menu-outline" onclick="showMenu()"></ion-icon>
   </nav>
@@ -68,11 +74,11 @@
       </div>
     </div>
     <div class="contact-col">
-      <form action="form-handler.php" method="post">
-        <input name="name" type="text" placeholder="Enter your name" required>
-        <input name="email" type="email" placeholder="Enter your email address" required>
-        <input name="subject" type="text" placeholder="Enter your subject" required>
-        <textarea name="message" rows="8" placeholder="Message" required></textarea>
+      <form>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required>
+        <input id="email" name="email" type="email" placeholder="Enter your email address" required>
+        <input id="subject" name="subject" type="text" placeholder="Enter your subject" required>
+        <textarea id="message" name="message" rows="8" placeholder="Message" required></textarea>
         <button type="submit" class="hero-btn green-btn">Send Message</button>
       </form>
     </div>
@@ -80,8 +86,8 @@
 </section>
 <!--------Footer--------------->
 <section class="footer">
-  <h4>About Us</h4>
-  <p>Established on April 1, 2010, SeSC (Securities Studying Club) is currently the only club at FTU2 operating in the field of finance and securities.<br> This is an environment for students with the same passion to learn and share knowledge with each other.</p>
+  <h4>CLB Tài chính - Chứng khoán SeSC </h4>
+    <p>Thành lập vào ngày 01/04/2010, CLB Tài chính - Chứng khoán SeSC là CLB đầu tiên và duy nhất của ĐH Ngoại Thương TPHCM hoạt động trong lĩnh vực Tài chính - Chứng khoán. Với sứ mệnh phổ cập tri thức tài chính cho cộng đồng, Chúng Tôi cam kết không ngừng nâng cao chất lượng hoạt động, tiếp tục là bệ phóng cho các tài năng trong lĩnh vực Tài chính - Chứng khoán trong nhiều năm nữa.</p>
   <div class="icons">
     <a href="https://www.facebook.com/CaulacboChungKhoanSeSC" target="_blank"><ion-icon class="fa" name="logo-facebook"></ion-icon></a>
     <a href="https://www.linkedin.com/company/sesc-ftu2/mycompany/" target="_blank"><ion-icon class="fa" name="logo-linkedin"></ion-icon></a>
@@ -98,7 +104,7 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script>
     window.addEventListener("load", function(){
-    setInterval(pippo, 1150)});
+    setInterval(pippo, 1000)});
     function pippo(){
       var preloader = document.getElementById("preloader");
       document.body.removeChild(preloader);
