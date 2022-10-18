@@ -1,103 +1,781 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Securities Studying Club - Never Back Down</title>
+  <head>
+    <title>Về CLB Tài chính - Chứng khoán SeSC</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-  <!-- gg fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
 
-  <!-- css files -->
-  <link rel="stylesheet" href="/style/home/style.css">
-  <link rel="stylesheet" href="/style/about/style_about.css">
+    <!-- gg fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;500;600;700&family=Pacifico&family=Quicksand:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XE0JP45WDF"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XE0JP45WDF');
-  </script>
-</head>
-<body>
-<div id="preloader"></div>
-<!--------Header----------------->
-<section class ="sub-header">
-  <nav>
-    <a href="/html/home/index.html"><img src="/SeSC/Logo_small_trans.png" target="_blank"></a>
-    <div class="nav-links" id="navLinks">
-      <ion-icon class="fa fa-times" name="close-outline" onclick="hideMenu()"></ion-icon>
-      <ul>
-        <li class="nav"><a href="/html/home/index.html">HOME</a></li>
-        <li class="nav"><a href="/html/aboutUs/about.html">ABOUT US</a></li>
-        <li class="nav"><a href="/html/fsc/fsc.html">FSC</a></li>
-        <li class="nav"><a href="/html/blog/blog.html">BLOG</a></li>
-        <li class="nav"><a href="/html/recruitment/recruitment.html">RECRUITMENT</a></li> 
-        <li class="nav"><a href="/html/contact/contact.html">CONTACT</a></li>   
-      </ul>      
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="shortcut icon" type="image/png" href="/SeSC/LogoSeSC.png"/>
+
+    <!-- testimonials ownl-carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+    <!-- Icon trên tab của web browser -->
+    <link rel="shortcut icon" type="image/png" href="/SeSC/LogoSeSC.png"/>
+
+    <!-- css files -->
+    <link rel="stylesheet" href="/style/home/style.css">
+    <link rel="stylesheet" href="/style/about/style_about.css" />
+  </head>
+  <body>
+    <!--------Header----------------->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/html/home/index.html">
+              <img src="/SeSC/Logo_small_trans.png" target="_blank" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              id="btn-dropDownMenu"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end navMenu"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="/html/home/index.html"
+                    >TRANG CHỦ</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/html/aboutUs/about.html"
+                    >VỀ SeSC</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/html/fsc/fsc.html">FSC</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/html/recruitment/recruitment.html"
+                    >TUYỂN NHÂN SỰ</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/html/contact/contact.html"
+                    >LIÊN HỆ</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="title">
+          <h2>GIỚI THIỆU VỀ SeSC</h2>
+        </div>
+      </div>
+    </header>
+    <section class="carousel">
+      <div class="container"></div>
+    </section>
+    <!--------Introduction----------------->
+    <section class="about-us">
+      <div class="container">
+        <div class="row">
+          <div class="about-col">
+            <h1>Lời Mở Đầu</h1>
+            <p>Trải qua hơn 10 năm hoạt động và phát triển, CLB Tài chính - Chứng khoán SeSC chính
+              là nơi hội tụ, gắn kết của các thế hệ sinh viên yêu thích Tài chính và Chứng khoán. Mang
+              trong mình sứ mệnh phát triển nguồn nhân lực tương lai một cách toàn diện, câu lạc bộ
+              ngày càng thu hút sự quan tâm, yêu thích của các bạn sinh viên, trở thành môi trường
+              năng động cho các bạn sinh viên tham gia các hoạt động chuyên sâu về lĩnh vực Tài
+              chính - Chứng khoán.</p>
+            <a href="https://www.facebook.com/CaulacboChungKhoanSeSC" class="hero-btn green-btn" target="_blank">Khám Phá Ngay</a>
+          </div>
+          <div class="about-col">
+            <img src="/SeSC/TBD.jpg">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------Numbers---------------------->
+    <section class="numbers">
+      <div class="container">
+        <!-- <div class="heading"><h2>SeSC - Một Hành Trình</h2></div> -->
+        <div class="number row">
+          <div class="col-sm-6 col-md-3">
+            <div class="item_container">
+              <h3 class="num">12</h3>
+              <p>Năm</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="item_container">
+              <h3 class="num">80</h3>
+              <p>Thành Viên</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="item_container">
+              <h3 class="num">800</h3>
+              <p>Cựu Thành Viên</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="item_container">
+              <h3 class="num">100</h3>
+              <p>Doanh Nghiệp Đồng Hành</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------Activities---------------------->
+    <div class="activities">
+      <div class="container timeline-projects mt-5">
+        <div class="heading-text">
+          <h2>Our Activities</h2>
+          <h3>Hoạt Động Nổi Bật</h3>
+          <p class="description"></p>
+        </div>
+        <div id="timeline">
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="21px"
+                height="20px"
+                viewBox="0 0 21 20"
+                enable-background="new 0 0 21 20"
+                xml:space="preserve"
+              >
+                <path
+                  fill="#FFFFFF"
+                  d="M19.998,6.766l-5.759-0.544c-0.362-0.032-0.676-0.264-0.822-0.61l-2.064-4.999
+          c-0.329-0.825-1.5-0.825-1.83,0L7.476,5.611c-0.132,0.346-0.462,0.578-0.824,0.61L0.894,6.766C0.035,6.848-0.312,7.921,0.333,8.499
+          l4.338,3.811c0.279,0.246,0.395,0.609,0.314,0.975l-1.304,5.345c-0.199,0.842,0.708,1.534,1.468,1.089l4.801-2.822
+          c0.313-0.181,0.695-0.181,1.006,0l4.803,2.822c0.759,0.445,1.666-0.23,1.468-1.089l-1.288-5.345
+          c-0.081-0.365,0.035-0.729,0.313-0.975l4.34-3.811C21.219,7.921,20.855,6.848,19.998,6.766z"
+                />
+              </svg>
+            </div>
+            <div class="timeline-content">
+              <h2>HỘI THẢO ĐẦU NĂM</h2>
+              <div class="description-text">
+                <p>
+                  Là sự kiện học thuật đầu tiên được tổ chức trong mỗi nhiệm kỳ,
+                  Hội thảo Đầu năm là nơi các tân sinh viên có cho mình những tiếp
+                  xúc đầu tiên với lĩnh vực Tài chính - Chứng khoán.
+                </p>
+                <p>
+                  Hằng năm, Hội thảo Đầu năm đón tiếp rất nhiều lượt ghé thăm của
+                  các bạn tân sinh viên và là diễn đàn uy tín với sự góp mặt của
+                  các diễn giả kinh nghiệm trong ngành.
+                </p>
+              </div>
+              <a href="https://www.facebook.com/CaulacboChungKhoanSeSC/photos/a.306605929351126/5973824435962552" target="_blank" class="btn">Khám Phá Ngay</a>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="21px"
+                height="20px"
+                viewBox="0 0 21 20"
+                enable-background="new 0 0 21 20"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    fill="#FFFFFF"
+                    d="M17.92,3.065l-1.669-2.302c-0.336-0.464-0.87-0.75-1.479-0.755C14.732,0.008,7.653,0,7.653,0v5.6
+              c0,0.096-0.047,0.185-0.127,0.237c-0.081,0.052-0.181,0.06-0.268,0.02l-1.413-0.64C5.773,5.183,5.69,5.183,5.617,5.215l-1.489,0.65
+              c-0.087,0.038-0.19,0.029-0.271-0.023c-0.079-0.052-0.13-0.141-0.13-0.235V0H2.191C1.655,0,1.233,0.434,1.233,0.97
+              c0,0,0.025,15.952,0.031,15.993c0.084,0.509,0.379,0.962,0.811,1.242l2.334,1.528C4.671,19.905,4.974,20,5.286,20h10.307
+              c1.452,0,2.634-1.189,2.634-2.64V4.007C18.227,3.666,18.12,3.339,17.92,3.065z M16.42,17.36c0,0.464-0.361,0.833-0.827,0.833H5.341
+              l-1.675-1.089h10.341c0.537,0,0.953-0.44,0.953-0.979V2.039l1.459,2.027V17.36L16.42,17.36z"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="timeline-content right">
+              <h2>TRAINING NỘI BỘ</h2>
+              <div class="description-text">
+                <p>
+                  Bên cạnh sứ mệnh nâng cao tri thức tài chính cho cộng đồng, CLB
+                  SeSC còn tự hào là bệ phóng cho những tài năng trong lĩnh vực
+                  tài chính - chứng khoán bước ra ánh sáng.
+                </p>
+                <p>
+                  Hằng năm, những thành viên của CLB, đặc biệt là các tân SeSCers,
+                  sẽ có cơ hội tham gia những buổi training từ cơ bản đến chuyên
+                  sâu về lĩnh vực tài chính - chứng khoán, với những diễn giả là
+                  những cựu thành viên cực kì tài năng của chính CLB.
+                </p>
+              </div>
+              <a href="#" class="btn">từ từ hãy KHÁM PHÁ</a>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="21px"
+                height="20px"
+                viewBox="0 0 21 20"
+                enable-background="new 0 0 21 20"
+                xml:space="preserve"
+              >
+                <path
+                  fill="#FFFFFF"
+                  d="M19.998,6.766l-5.759-0.544c-0.362-0.032-0.676-0.264-0.822-0.61l-2.064-4.999
+          c-0.329-0.825-1.5-0.825-1.83,0L7.476,5.611c-0.132,0.346-0.462,0.578-0.824,0.61L0.894,6.766C0.035,6.848-0.312,7.921,0.333,8.499
+          l4.338,3.811c0.279,0.246,0.395,0.609,0.314,0.975l-1.304,5.345c-0.199,0.842,0.708,1.534,1.468,1.089l4.801-2.822
+          c0.313-0.181,0.695-0.181,1.006,0l4.803,2.822c0.759,0.445,1.666-0.23,1.468-1.089l-1.288-5.345
+          c-0.081-0.365,0.035-0.729,0.313-0.975l4.34-3.811C21.219,7.921,20.855,6.848,19.998,6.766z"
+                />
+              </svg>
+            </div>
+            <div class="timeline-content">
+              <h2>CUỘC THI "ANH TÀI CHỨNG KHOÁN"</h2>
+              <div class="description-text">
+                <p>
+                  Là cuộc thi nội bộ của CLB SeSC, cuộc thi "Anh Tài Chứng Khoán"
+                  được tổ chức nhằm tạo ra một sân chơi lành mạnh cho các thành
+                  viên tranh tài với nhau về các kiến thức về đầu tư.
+                </p>
+                <p>
+                  Xuyên suốt cuộc thi, các thành viên sẽ được trải nghiệm thực tế
+                  các hoạt động đầu tư trên sàn chứng khoán thật và cùng nhau tham
+                  gia hoàn thành một bài báo cáo phân tích một mã cổ phiếu theo
+                  đúng các tiêu chuẩn của ngành.
+                </p>
+              </div>
+              <a href="#" class="btn">TỪ TỪ HÃY KHÁM PHÁ</a>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="21px"
+                height="20px"
+                viewBox="0 0 21 20"
+                enable-background="new 0 0 21 20"
+                xml:space="preserve"
+              >
+                <path
+                  fill="#FFFFFF"
+                  d="M19.998,6.766l-5.759-0.544c-0.362-0.032-0.676-0.264-0.822-0.61l-2.064-4.999
+            c-0.329-0.825-1.5-0.825-1.83,0L7.476,5.611c-0.132,0.346-0.462,0.578-0.824,0.61L0.894,6.766C0.035,6.848-0.312,7.921,0.333,8.499
+            l4.338,3.811c0.279,0.246,0.395,0.609,0.314,0.975l-1.304,5.345c-0.199,0.842,0.708,1.534,1.468,1.089l4.801-2.822
+            c0.313-0.181,0.695-0.181,1.006,0l4.803,2.822c0.759,0.445,1.666-0.23,1.468-1.089l-1.288-5.345
+            c-0.081-0.365,0.035-0.729,0.313-0.975l4.34-3.811C21.219,7.921,20.855,6.848,19.998,6.766z"
+                />
+              </svg>
+            </div>
+            <div class="timeline-content right">
+              <h2>CUỘC THI SINH VIÊN VỚI TÀI CHÍNH - FSC</h2>
+              <div class="description-text">
+                <p>
+                  Cuộc thi Sinh viên với Tài chính hay Financial Student Contest
+                  (FSC) là hoạt động lớn nhất và tiểu biểu nhất của CLB Tài chính
+                  - Chứng khoán SeSC. Được tổ chức thường niên vào tháng 3 hằng
+                  năm, FSC ra tạo sân chơi cho các bạn trẻ đam mê Tài chính nói
+                  chung và Chứng khoán nói riêng được thử sức mình.
+                </p>
+                <p>
+                  Bên cạnh đó, cuộc thi còn là cầu nối giữa Nhà tuyển dụng và sinh
+                  viên, hỗ trợ sinh viên trong những định hướng phát triển và lựa
+                  chọn việc làm thích hợp trong tương lai.
+                </p>
+                <p>
+                  Trải qua 10 mùa, cuộc thi FSC đã tạo dựng được thương hiệu uy
+                  tín và thu hút sự quan tâm của đông đảo sinh viên toàn quốc.
+                  Tiếp nối thành công của các mùa trước, Cuộc thi “Sinh viên với
+                  Tài chính FSC” mùa 11 hứa hẹn sẽ mang đến những đổi mới về nội
+                  dung, mới mẻ và hấp dẫn hơn cho cộng đồng.
+                </p>
+              </div>
+              <a
+                href="https://www.facebook.com/sinhvienvoitaichinh"
+                target="_blank"
+                class="btn"
+                >KHÁM PHÁ NGAY</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <ion-icon class="fa fa-bars" name="menu-outline" onclick="showMenu()"></ion-icon>
-  </nav> 
-  <div class="text-box">
-    <h1>About Us</h1>
-</section>
-<!--------Introduction----------------->
-<section class="about-us">
-  <div class="row">
-    <div class="about-col">
-      <h1>Abstract</h1>
-      <p>We investigate the equity market timing hypothesis of capital structure in the case of Vietnam. The two questions that we aim to answer in this paper are: Whether or not Vietnamese listed non-financial firms’ capital structures are affected by equity market timing? If they are indeed affected, does the effect last throughout the years, or is it only a short-term effect? The results suggest that capital structure is the cumulative outcomes of past market timing attempts for Vietnamese non-financial firms. Our findings are consistent with the theory proposed by Baker & Wurgler (2002), the pioneering research whose model have been widely adopted in numerous studies around the world in this field.</p>
-      <a href="https://www.facebook.com/CaulacboChungKhoanSeSC" class="hero-btn green-btn" target="_blank">Explore now</a>
+    <!-- Coreteam -->
+    <div class="coreteam">
+      <div class="container">
+        <div class="heading-text">
+          <h2>Our Team</h2>
+          <h3>Ban Điều Hành</h3>
+          <p class="description"></p>
+        </div>
+        <div class="team-members">
+          <div class="bcn">
+            <div class="row cn">
+              <div class="card col-sm-12 col-md-3">
+                <div class="content">
+                    <div class="imgBx">
+                        <img src="/SeSC/minh-tin.JPG" alt="Đỗ Minh Tín">
+                    </div>
+                    <div class="contentBx">
+                        <h4>Minh Tín</h4>
+                        <h5>Chủ Nhiệm</h5>
+                    </div>
+                    <div class="sci">
+                        <a href="https://www.facebook.com/profile.php?id=100012055872774" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="mailto: dominhtin.SeSC@gmail.com" target="_blank"><i class="fa fa-at"></i></a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="row pcn">
+              <div class="card col-sm-12 col-md-3">
+                <div class="content">
+                  <div class="imgBx" style="overflow:hidden;">
+                      <img src="/SeSC/ngan-ho.JPG" alt="Ngân Hồ" style="transform: scale(1.2)">
+                  </div>
+                  <div class="contentBx">
+                      <h4>Thanh Ngân</h4>
+                      <h5>Phó Chủ Nhiệm Đối Ngoại</h5>
+                  </div>
+                  <div class="sci">
+                      <a href="https://www.facebook.com/profile.php?id=100081572403353" target="_blank"><i class="fab fa-facebook"></i></a>
+                      <a href="mailto: hothanhngan.SeSC@gmail.com" target="_blank"><i class="fa fa-at"></i></a>
+                  </div>
+              </div>
+              </div>
+              <div class="card col-sm-12 col-md-3">
+                <div class="content">
+                  <div class="imgBx">
+                      <img src="/SeSC/huyen-tran.jpg" alt="Sơn Trân">
+                  </div>
+                  <div class="contentBx">
+                      <h4>Huyền Trân</h4>
+                      <h5>Phó Chủ Nhiệm Đối Nội</h5>
+                  </div>
+                  <div class="sci">
+                      <a href="https://www.facebook.com/tran.som.967" target="_blank"><i class="fab fa-facebook"></i></a>
+                      <a href="mailto: sonthihuyentran.SeSC@gmail.com" target="_blank"><i class="fa fa-at"></i></a>
+                  </div>
+              </div>
+              </div>
+            </div>
+            <div class="row bdh">
+              <div class="card col-sm-12 col-md-6 col-lg-2">
+                <div class="content">
+                  <div class="imgBx">
+                      <img src="/SeSC/my-hang.jpg" alt="Mỹ Hằng">
+                  </div>
+                  <div class="contentBx">
+                      <h4>Mỹ Hằng</h4>
+                      <h5>Trưởng Ban Chuyên Môn</h5>
+                  </div>
+                  <div class="sci">
+                      <a href="https://www.facebook.com/profile.php?id=100028279034271" target="_blank"><i class="fab fa-facebook"></i></a>
+                      <a href="mailto: nguyenthimyhang.SeSC@gmail.com" target="_blank"><i class="fa fa-at"></i></a>
+                  </div>
+              </div>
+              </div>
+              <div class="card col-sm-12 col-md-6 col-lg-2">
+                <div class="content">
+                  <div class="imgBx">
+                      <img src="/SeSC/viet-khai.JPG" alt="Việt Khải">
+                  </div>
+                  <div class="contentBx">
+                      <h4>Việt Khải</h4>
+                      <h5>Trưởng Ban Đối Ngoại</h5>
+                  </div>
+                  <div class="sci">
+                      <a href="https://www.facebook.com/viet.khai.2710" target="_blank"><i class="fab fa-facebook"></i></a>
+                      <a href="mailto: nguyenvietkhai.SeSC@gmail.com" target="_blank"><i class="fa fa-at"></i></a>
+                  </div>
+              </div>
+              </div>
+              <div class="card col-sm-12 col-md-6 col-lg-2">
+                <div class="content">
+                  <div class="imgBx">
+                      <img src="/SeSC/tvi-bns.JPG" alt="Tường Vi">
+                  </div>
+                  <div class="contentBx">
+                      <h4>Tường Vi</h4>
+                      <h5>Trưởng Ban Nhân Sự</h5>
+                  </div>
+                  <div class="sci">
+                      <a href="https://www.facebook.com/profile.php?id=100074020480586" target="_blank"><i class="fab fa-facebook"></i></a>
+                      <a href="mailto: nguyenphantuongvi.SeSC@gmail.com" target="_blank"><i class="fa fa-at"></i></a>
+                  </div>
+              </div>
+              </div>
+              <div class="card col-sm-12 col-md-6 col-lg-2">
+                <div class="content">
+                  <div class="imgBx">
+                      <img src="/SeSC/cxk.JPG" alt="Xuân Khang">
+                  </div>
+                  <div class="contentBx">
+                      <h4>Xuân Khang</h4>
+                      <h5>Trưởng Ban Truyền Thông</h5>
+                  </div>
+                  <div class="sci">
+                      <a href="https://www.facebook.com/cxk.0112" target="_blank"><i class="fab fa-facebook"></i></a>
+                      <a href="mailto: caoxuankhang.SeSC@gmail.com" target="_blank"><i class="fa fa-at"></i></a>
+                  </div>
+              </div>
+              </div>
+              <div class="card col-sm-12 col-md-6 col-lg-2">
+                <div class="content">
+                  <div class="imgBx">
+                      <img src="/SeSC/bao-ngocc.jpg" alt="Bảo Ngọc">
+                  </div>
+                  <div class="contentBx">
+                      <h4>Bảo Ngọc</h4>
+                      <h5>Trưởng Ban Tổ Chức Sự Kiện</h5>
+                  </div>
+                  <div class="sci">
+                      <a href="https://www.facebook.com/profile.php?id=100010027033037" target="_blank"><i class="fab fa-facebook"></i></a>
+                      <a href="mailto: nguyentranbaongoc.SeSC@gmail.com" target="_blank"><i class="fa fa-at"></i></a>
+                  </div>
+              </div>
+              </div>
+              <div class="card col-sm-12 col-md-6 col-lg-2">
+                <div class="content">
+                  <div class="imgBx">
+                      <img src="/SeSC/minh-ngoc.JPG" alt="Minh Ngọc">
+                  </div>
+                  <div class="contentBx">
+                      <h4>Minh Ngọc</h4>
+                      <h5>Phó Ban Chuyên Môn</h5>
+                  </div>
+                  <div class="sci">
+                      <a href="https://www.facebook.com/profile.php?id=100074222500040" target="_blank"><i class="fab fa-facebook"></i></a>
+                      <a href="mailto: buinuminhngoc.SeSC@gmail.com" target="_blank"><i class="fa fa-at"></i></a>
+                  </div>
+              </div>
+              </div>
+              <div class="card col-sm-12 col-md-6 col-lg-2">
+                <div class="content">
+                  <div class="imgBx">
+                      <img src="/SeSC/long-dinh.jpg" alt="Long Đỉnh">
+                  </div>
+                  <div class="contentBx">
+                      <h4>Long Đỉnh</h4>
+                      <h5>Phó Ban Đối Ngoại</h5>
+                  </div>
+                  <div class="sci">
+                      <a href="https://www.facebook.com/longdinh2003" target="_blank"><i class="fab fa-facebook"></i></a>
+                      <a href="mailto: tranlongdinh.SeSC@gmail.com" target="_blank"><i class="fa fa-at"></i></a>
+                  </div>
+              </div>
+              </div>
+              <div class="card col-sm-12 col-md-6 col-lg-2">
+                <div class="content">
+                  <div class="imgBx">
+                      <img src="/SeSC/tanh-bns1.jpg" alt="Tuấn Anh">
+                  </div>
+                  <div class="contentBx">
+                      <h4>Tuấn Anh</h4>
+                      <h5>Phó Ban Nhân Sự</h5>
+                  </div>
+                  <div class="sci">
+                      <a href="https://www.facebook.com/trantuananh2903" target="_blank"><i class="fab fa-facebook"></i></a>
+                      <a href="mailto: trantuananh.SeSC@gmail.com" target="_blank"><i class="fa fa-at"></i></a>
+                  </div>
+              </div>
+              </div>
+              <div class="card col-sm-12 col-md-6 col-lg-2">
+                <div class="content">
+                  <div class="imgBx">
+                      <img src="/SeSC/trong-nhan.jpg" alt="Trọng Nhân">
+                  </div>
+                  <div class="contentBx">
+                      <h4>Trọng Nhân</h4>
+                      <h5>Phó Ban Truyền Thông</h5>
+                  </div>
+                  <div class="sci">
+                      <a href="https://www.facebook.com/trongnhantong2810" target="_blank"><i class="fab fa-facebook"></i></a>
+                      <a href="mailto: tongnguyentrongnhan.SeSC@gmail.com" target="_blank"><i class="fa fa-at"></i></a>
+                  </div>
+              </div>
+              </div>
+              <div class="card col-sm-12 col-md-6 col-lg-2">
+                <div class="content">
+                  <div class="imgBx">
+                      <img src="/SeSC/hoa-siemm.jpeg" alt="Hoa Siêm">
+                  </div>
+                  <div class="contentBx">
+                      <h4>Hoa Siêm</h4>
+                      <h5>Phó Ban Tổ Chức Sự Kiện</h5>
+                  </div>
+                  <div class="sci">
+                      <a href="https://www.facebook.com/hoasiem.hoasiem" target="_blank"><i class="fab fa-facebook"></i></a>
+                      <a href="mailto: ngonguyenhoasiem.SeSC@gmail.com" target="_blank"><i class="fa fa-at"></i></a>
+                  </div>
+              </div>
+              </div>
+            </div>
+            <div class="row pl-vpl">
+              <div class="card col-sm-12 col-md-6">
+                <div class="content">
+                  <div class="imgBx">
+                      <img src="/SeSC/anh-tu.JPG" alt="Anh Tú">
+                  </div>
+                  <div class="contentBx">
+                      <h4>Anh Tú</h4>
+                      <h5>Trưởng BTC FSC11</h5>
+                  </div>
+                  <div class="sci">
+                      <a href="https://www.facebook.com/tu.nguyenle.406314" target="_blank"><i class="fab fa-facebook"></i></a>
+                      <a href="mailto: nguyenlethanhtu.SeSC@gmail.com" target="_blank"><i class="fa fa-at"></i></a>
+                  </div>
+              </div>
+              </div>
+              <div class="card col-sm-12 col-md-6">
+                <div class="content">
+                  <div class="imgBx">
+                      <img src="/SeSC/thanh-vy-1.JPG" alt="Thanh Vy">
+                  </div>
+                  <div class="contentBx">
+                      <h4>Thanh Vy</h4>
+                      <h5>Phó BTC FSC11</h5>
+                  </div>
+                  <div class="sci">
+                      <a href="https://www.facebook.com/ThanksVieNe" target="_blank"><i class="fab fa-facebook"></i></a>
+                      <a href="mailto: nguyenlethanhvy.SeSC@gmail.com" target="_blank"><i class="fa fa-at"></i></a>
+                  </div>
+              </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="about-col">
-      <img src="/SeSC/TBD.jpg">
+    <!-- Testimonials -->
+    <div class="testimonials demo">
+      <div class="container">
+        <div class="heading-text">
+          <h2>Testimonials</h2>
+          <h3>Những Lời Nói Ngọt Ngào</h3>
+          <p class="description"></p>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div id="testimonial-slider" class="owl-carousel">
+              <div class="testimonial">
+                <span class="icon fa fa-quote-left"></span>
+                <p class="description">
+                  Ở SeSC, mình như tìm thấy một “better version” của mình vậy đó. SeSC không chỉ là CLB mà còn là một gia đình thực thụ nữa. Những ngày CLB cùng nhau uống lúa mạch, cùng nhau bonding thâu đêm và cùng hít hà drama khắp mọi nơi sẽ là những kỉ niệm đẹp nhất của (tất cả tụi) mình. Mình chắc đó!
+                </p>
+                <div class="testimonial-content">
+                  <div class="pic">
+                    <img src="/SeSC/ngan-pieo3.jpg" class="" alt="" />
+                  </div>
+                  <h3 class="title">Thanh Ngân</h3>
+                  <span class="post">Trưởng BTC Cuộc thi FSC mùa 9 (2021)</span>
+                </div>
+              </div>
+              <div class="testimonial">
+                <span class="icon fa fa-quote-left"></span>
+                <p class="description">
+                  Ở SeSC, chị thật may mắn khi có mọi người là chỗ dựa tinh thần của chị, là nơi chị có thể thoải mái chia sẻ những niềm vui lớn nhỏ; đôi lúc Ban mình còn cho chị những liều thuốc đáng quý để giải tỏa áp lực. Chị yêu SeSC, yêu Ban Đối ngoại nhiều lắm !!!
+                </p>
+                <div class="testimonial-content">
+                  <div class="pic"><img src="/SeSC/thu-thao3.jpg" alt="" /></div>
+                  <h3 class="title">Thu Thảo</h3>
+                  <span class="post">Trưởng BĐN nhiệm kỳ 2020-2021</span>
+                </div>
+              </div>
+              <div class="testimonial">
+                <span class="icon fa fa-quote-left"></span>
+                <p class="description">
+                  QuA không quan trọng, quan trọng là QuA "tim" SeSC 💚 <br> Hai năm cùng với SeSC đã trôi qua. Những năm tháng đại học của mình luôn gắn liền với SeSC, và mình tin rằng chính SeSC đã làm cho 2 năm vừa qua của mình trở nên thật trọn vẹn, và cũng trở thành một trong những khoảng thời gian mà mình cảm thấy hạnh phúc nhất.
+                </p>
+                <div class="testimonial-content">
+                  <div class="pic"><img src="/SeSC/lamie.jpeg" alt="Quỳnh Lam"/></div>
+                  <h3 class="title">Quỳnh Lam</h3>
+                  <span class="post">Chủ nhiệm CLB nhiệm kỳ 2021-2022</span>
+                </div>
+              </div>
+              <div class="testimonial">
+                <span class="icon fa fa-quote-left"></span>
+                <p class="description" style="font-size: 16px">
+                  SeSC là một ngôi nhà, không phải được xây bằng gạch mà bằng tình cảm, được cũng cố bằng sự thấu hiểu, yêu thương mà các thành viên dần tích lũy đươc qua thời gian làm việc, trải nghiệm và vấp ngã để đứng dậy và trưởng thành hơn cùng nhau ngay dưới mái nhà này. SeSC còn là đòn bẩy tốt nhất để có thể gặt hái được những thành tựu trên con đường sự nghiệp sau này. Nếu phải miêu tả quãng thời gian đại học của mình trong một từ đó chắc chắn sẽ là SeSC.
+                </p>
+                <div class="testimonial-content">
+                  <div class="pic"><img src="/SeSC/dang-chinh1.jpg" alt="" /></div>
+                  <h3 class="title">Đặng Chính</h3>
+                  <span class="post">Mãi-Mãi-Là Thành viên Ban TCSK</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
-<!--structure-->
-<section class="bdh-structure">
-  
-</section>
-<!--Projects-->
-<section class="bdh-projects">
-  
-</section>
-<!--Testimonials-->
-<section class="bdh-testimonial">
-  
-</section>
-<!--------Footer--------------->
-<section class="footer">
-    <h4>CLB Tài chính - Chứng khoán SeSC </h4>
-      <p>Thành lập vào ngày 01/04/2010, CLB Tài chính - Chứng khoán SeSC là CLB đầu tiên và duy nhất của ĐH Ngoại Thương TPHCM hoạt động trong lĩnh vực Tài chính - Chứng khoán. Với sứ mệnh phổ cập tri thức tài chính cho cộng đồng, Chúng Tôi cam kết không ngừng nâng cao chất lượng hoạt động, tiếp tục là bệ phóng cho các tài năng trong lĩnh vực Tài chính - Chứng khoán trong nhiều năm nữa.</p>
-    <div class="icons">
-      <a href="https://www.facebook.com/CaulacboChungKhoanSeSC" target="_blank"><ion-icon class="fa" name="logo-facebook"></ion-icon></a>
-      <a href="https://www.linkedin.com/company/sesc-ftu2/mycompany/" target="_blank"><ion-icon class="fa" name="logo-linkedin"></ion-icon></a>
-      <a href="https://www.tiktok.com/@fsc.10" target="_blank"><ion-icon class="fa" name="logo-tiktok"></ion-icon></a></ion-icon>
-    </div>
-    <p>Powered by  <ion-icon class="fa" name="heart-outline"></ion-icon>  from SeSC</p>
-</section>
-<!--------Javacrpt for Toggle Mobile Menu------->
-  <script>
-    var navLinks = document.getElementById("navLinks")
-    function showMenu(){navLinks.style.right="0";}
-    function hideMenu(){navLinks.style.right="-200px";}
-  </script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script>
-    window.addEventListener("load", function(){
-    setInterval(pippo, 1000)});
-    function pippo(){
-      var preloader = document.getElementById("preloader");
-      document.body.removeChild(preloader);
-    }
-  </script>
-</body>
-</body>
+    <!--------Footer--------------->
+    <footer class="footer">
+      <div class="container">
+        <h4>CLB Tài chính - Chứng khoán SeSC</h4>
+        <p>Thành lập vào ngày 01/04/2010, CLB Tài chính - Chứng khoán SeSC là CLB đầu tiên và duy nhất của ĐH Ngoại Thương TPHCM hoạt động trong lĩnh vực Tài chính - Chứng khoán. Với sứ mệnh phổ cập tri thức tài chính cho cộng đồng, chúng tôi cam kết không ngừng nâng cao chất lượng hoạt động, tiếp tục là bệ phóng cho các tài năng trong lĩnh vực Tài chính - Chứng khoán trong nhiều năm nữa.</p>
+        <div class="icons">
+          <a href="https://www.facebook.com/CaulacboChungKhoanSeSC" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/company/SeSC-ftu2/mycompany/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.tiktok.com/@fsc.10" target="_blank"><i class="fa-brands fa-tiktok"></i></a></ion-icon>
+        </div>
+        <p>Powered by  <i class="fa fa-heart"></i>  from SeSC</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Sticky effect -->
+    <script>
+      var header = document.getElementsByClassName("header")[0];
+      var carousel = document.getElementsByClassName("carousel")[0];
+      var imgLogo = document.querySelector("body > header > div > nav > div > a > img");
+
+      window.onscroll = function () {
+        if (window.pageYOffset >= 300) {
+          header.classList.add("sticky");
+          document.querySelector("body > header > div > div").style.display =
+            "none";
+          imgLogo.src = "/SeSC/Logo_small.jpg";
+          imgLogo.style = "width: 50%; border-radius: 100px;";
+        } else {
+          header.classList.remove("sticky");
+
+          if(document.getElementById("navbarNav").className == "navbar-collapse justify-content-end navMenu collapse show") {
+            document.querySelector("body > header > div > div").style.display =
+            "none";
+          } else {
+            document.querySelector("body > header > div > div").style.display =
+            "block";
+          }
+
+          imgLogo.src = "/SeSC/Logo_small_trans.png";
+          imgLogo.style = "width: 70%;";
+        }
+      };
+    </script>
+
+    <!-- countup js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- b2 -->
+    <script src="/Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/jquery.countup.js"></script>
+
+    <script>
+      $(".num").countUp({
+        time: 1000,
+        delay: 5,
+      });
+    </script>
+
+    <!-- testimonials -->
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"
+    ></script>
+    <script>
+    $(document).ready(function () {
+      $("#testimonial-slider").owlCarousel({
+        items: 3,
+        itemsDesktop: [1000, 3],
+        itemsDesktopSmall: [979, 2],
+        itemsTablet: [768, 2],
+        itemsMobile: [650, 1],
+        pagination: true,
+        autoPlay: true,
+      });
+    });
+    </script>
+  </body>
 </html>
 
 

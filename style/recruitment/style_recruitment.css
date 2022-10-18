@@ -6,6 +6,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  position: relative;
+}
+
 /* ----- Header & NavMenu ----- */
 .header {
   position: absolute;
@@ -17,7 +21,7 @@
 }
 
 .header .navbar-brand img {
-  width: 70%;
+  width: 100%;
 }
 
 .header button.navbar-toggler {
@@ -38,7 +42,7 @@
   content: "";
   width: 0%;
   height: 2px;
-  background: #03a54c;
+  background-color: beige;
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -54,15 +58,23 @@
   font-size: 15px;
 }
 
+.header .title {
+  text-align: center;
+}
+
+.header .title h2 {
+  color: beige;
+}
+
 /* responsive */
 .header .show {
   background-color: green;
   transition: 0.1s;
 }
 
-/* ----- Carousel ----- */
-.carousel {
-  height: 50vh;
+/* ----- main-carousel ----- */
+.main-carousel {
+  height: 40vh;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(/SeSC/green-building.jpg);
@@ -72,22 +84,8 @@
   color: beige;
 }
 
-.carousel h2 {
+.main-carousel h2 {
   padding-top: 170px;
-}
-
-@media (max-width: 992px) {
-  .header .navbar-brand {
-    transform: translateX(260px);
-    text-align: center;
-  }
-  .carousel h2 {
-    padding-top: 110px;
-  }
-
-  .carousel {
-    height: 40vh;
-  }
 }
 
 /* sticky effect */
@@ -100,6 +98,7 @@
   background-color: green;
   height: 15vh;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  z-index: 1;
 }
 
 .sticky .navMenu ul li::after {
@@ -116,11 +115,11 @@
 
 /* ----- SeSC Quote ----- */
 .intro-quote {
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 .intro-quote .right {
-  padding: 0 50px;
+  /* padding: 0 50px; */
 }
 
 .intro-quote .right img {
@@ -159,25 +158,66 @@
   color: green;
 }
 
+.intro-quote .left button a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.intro-quote .left button:hover a {
+  color: green;
+}
+
+.intro-quote .swing {
+  animation: swing ease-in-out 1s infinite alternate;
+  transform-origin: center -20px;
+}
+
+.intro-quote .swing:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #999;
+  top: -10px;
+  left: 50%;
+  z-index: 0;
+  border-bottom: none;
+  border-right: none;
+  transform: rotate(45deg);
+}
+/* nail */
+.intro-quote .swing:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  top: -18px;
+  left: 51%;
+  z-index: 10;
+  border-radius: 50% 50%;
+  background-color: green;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+
 /* ----- Number ----- */
 .numbers {
-  margin: 200px 0px;
+  margin: 100px 0px;
   background-image: url("/SeSC/[BCM]\ Background.png");
   text-align: center;
   padding: 60px 0px;
   background-attachment: fixed;
   background-position: right;
 }
-
-/* .numbers .heading {
-  margin-bottom: 40px;
-}
-
-.numbers .heading h2 {
-  font-size: 40px;
-  font-weight: 600;
-  color: #daf2da;
-} */
 
 .numbers .number h3 {
   font-size: 70px;
@@ -186,7 +226,7 @@
 }
 
 .numbers .number p {
-  font-size: 25px;
+  font-size: 15px;
   font-weight: 600;
   color: #daf2da;
 }
@@ -212,7 +252,7 @@
   margin: 50px 0px;
 }
 
-.main-concept .description #ichimoku {
+.main-concept .description .highlightText {
   color: green;
   font-weight: 600;
   font-size: 25px;
@@ -242,7 +282,7 @@
   top: 50%;
   left: -20px;
   transform: translateY(-50%);
-  z-index: 10;
+  /* z-index: 10; */
 }
 
 .main-concept .body .item .order span {
@@ -276,6 +316,7 @@
   position: relative;
   animation-duration: 2s;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 .main-concept .body .left img.main-img {
@@ -283,29 +324,6 @@
   border-radius: 20px;
   animation-duration: 2s;
   position: relative;
-  z-index: 5;
-}
-
-.main-concept .body .left .background {
-  height: 100%;
-  width: 90%;
-  position: absolute;
-  top: -5px;
-  left: 12px;
-  background-image: url("/SeSC/chart-vnindex.PNG");
-  background-attachment: fixed;
-  /* background-repeat: no-repeat; */
-  z-index: 0;
-  border-radius: 5px;
-}
-
-.main-concept .body .left .usdt {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  position: absolute;
-  bottom: 20px;
-  left: -20px;
-  width: 25%;
-  z-index: 10;
 }
 
 .main-concept button {
@@ -460,6 +478,56 @@
   color: #03a54c;
 }
 
+.jd-departments .carousel-containers {
+  width: fit-content;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 3px #03a54c ridge;
+  display: none;
+}
+
+.jd-departments .carousel {
+  /* height: 500px;
+  width: 700px; */
+  height: 70vh;
+  width: 70vw;
+}
+
+.jd-departments .carousel-control-next,
+.carousel-control-prev {
+  color: #03a54c !important;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.jd-departments .carousel-indicators button {
+  background-color: #03a54c !important;
+}
+
+.jd-departments .carousel-item {
+  height: 70vh;
+}
+
+.jd-departments .carousel-item-content {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.jd-departments .carousel .text {
+  text-align: left !important;
+}
+
+.jd-departments .carousel .text p {
+  font-size: calc(8px + 0.6vw);
+}
+
+.jd-departments .carousel-item-content h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
 /*-------footer----*/
 .footer {
   width: 100%;
@@ -497,4 +565,96 @@
 
 .footer p i {
   color: #03a54c;
+}
+
+/* responsive */
+/* big screens when zoomed in */
+@media only screen and (max-width: 992px) and (max-height: 700px) {
+  .header .navbar-brand {
+    /* transform: translateX(260px); */
+    text-align: center;
+  }
+
+  .sticky {
+    display: none;
+  }
+
+  .sticky .navbar-brand {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .main-carousel h2 {
+    padding-top: 110px;
+  }
+
+  .main-carousel {
+    height: 60vh;
+  }
+
+  .form h2 {
+    font-size: 20px;
+  }
+
+  .jd-departments .tab-pane .text-content {
+    display: none;
+  }
+
+  .jd-departments .tab-pane .carousel-containers {
+    display: block;
+  }
+
+  .jd-departments .carousel {
+    height: 550px;
+  }
+
+  .jd-departments .carousel-item {
+    height: 550px;
+  }
+
+  .jd-departments .carousel .text p {
+    font-size: calc(8px + 0.9vw);
+  }
+}
+
+/* small screens */
+@media only screen and (max-width: 992px) and (min-height: 700px) {
+  .header .navbar-brand {
+    /* transform: translateX(260px); */
+    text-align: center;
+  }
+
+  .sticky .navbar-brand {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .main-carousel h2 {
+    padding-top: 110px;
+  }
+
+  .main-carousel {
+    height: 40vh;
+  }
+
+  .form h2 {
+    font-size: 20px;
+  }
+
+  .jd-departments .tab-pane .text-content {
+    display: none;
+  }
+
+  .jd-departments .tab-pane .carousel-containers {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .main-concept .body .right,
+  .left {
+    width: 100%;
+  }
 }

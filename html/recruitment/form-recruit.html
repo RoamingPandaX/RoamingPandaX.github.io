@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Form TNS SeSC</title>
+    <title>Form TNS - SeSC</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <!-- content="width=device-width, initial-scale=1, shrink-to-fit=no" -->
+    
 
     <!-- Bootstrap CSS v5.2.0-beta1 -->
     <link
@@ -56,6 +55,7 @@
               aria-controls="navbarNav"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              id="btn-dropDownMenu"
             >
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -81,9 +81,6 @@
                   <a class="nav-link" href="/html/fsc/fsc.html">FSC</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/html/blog/blog.html">BLOG</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="/html/recruitment/recruitment.html"
                     >TUYỂN NHÂN SỰ</a
                   >
@@ -97,12 +94,13 @@
             </div>
           </div>
         </nav>
+        <div class="title">
+          <h2>ĐƠN TUYỂN NHÂN SỰ VÒNG 1</h2>
+        </div>
       </div>
     </header>
     <section class="carousel">
-      <div class="container">
-        <h2>ĐƠN TUYỂN NHÂN SỰ VÒNG 1</h2>
-      </div>
+      <div class="container"></div>
     </section>
     <section class="form">
         <div class="container">
@@ -125,23 +123,23 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="mb-3 col-4">
+                    <div class="mb-3 col-sm-6 col-md-4">
                         <label for="maSV" class="form-label">Mã SV</label>
                         <input type="text" class="form-control" id="maSV" placeholder="Mã Sinh viên">
                         <div class="noti-error" id="noti-maSV">
                           <p></p>
                         </div>
                     </div>
-                    <div class="mb-3 col-4">
+                    <div class="mb-3 col-sm-6 col-md-4">
                         <label for="lopSV" class="form-label">Lớp</label>
                         <input type="text" class="form-control" id="lopSV">
                         <div class="noti-error" id="noti-lopSV">
                           <p></p>
                         </div>
                     </div>
-                    <div class="mb-3 col-4">
+                    <div class="mb-3 col-sm-12 col-md-4">
                         <label for="gioiTinh" class="form-label">Giới Tính</label>
-                        <div class="gioiTinh row">
+                        <div class="gioiTinh row ps-3">
                             <div class="form-check col-4">
                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="nam">
                                 <label class="form-check-label" for="nam">
@@ -164,21 +162,21 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="mb-3 col-4">
+                    <div class="mb-3 col-sm-12 col-md-4">
                         <label for="sdt" class="form-label">Số điện thoại</label>
                         <input type="text" class="form-control" id="sdt">
                         <div class="noti-error" id="noti-sdt">
                           <p></p>
                         </div>
                     </div>
-                    <div class="mb-3 col-4">
+                    <div class="mb-3 col-sm-12 col-md-4">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" id="email">
                         <div class="noti-error" id="noti-email">
                           <p></p>
                         </div>
                     </div>
-                    <div class="mb-3 col-4">
+                    <div class="mb-3 col-sm-12 col-md-4">
                         <label for="linkFb" class="form-label">Link Facebook</label>
                         <input type="text" class="form-control" id="linkFb">
                         <div class="noti-error" id="noti-linkFb">
@@ -259,7 +257,7 @@
               </div>
               <div class="mb-3">
                 <label for="characters" class="form-label">4. Chọn 1 lựa chọn phù hợp với bạn cho mỗi câu bên dưới:</label>
-                <div class="characters row">
+                <div class="characters row ps-3">
                     <div class="form-check col-6">
                         <input class="form-check-input" type="radio" name="flexRadio1" id="teamwork" value="Làm việc teamwork">
                         <label class="form-check-label" for="teamwork">
@@ -418,127 +416,99 @@
                     </div>
                 </div>
                 <div class="tab-dpt">
-                    <!-- xóa flex-column để hiện hàng ngang -->
+                    <!-- button -->
                     <div class="nav nav-pills me-3 justify-content-center" role="tablist">
-                      <button
-                        class="nav-link border border-dark rounded text-dark mx-2 disabled"
-                        id="btn-bcm"
-                        data-bs-toggle="pill"
-                        data-bs-target="#v-pills-bcm"
-                      >
-                        Ban Chuyên Môn
-                      </button>
-                      <button
-                        class="nav-link border border-dark rounded text-dark mx-2 disabled"
-                        data-bs-toggle="pill"
-                        data-bs-target="#v-pills-bdn"
-                        id="btn-bdn"
-                      >
-                        Ban Đối Ngoại
-                      </button>
-                      <button
-                        class="nav-link border border-dark rounded text-dark mx-2 disabled"
-                        data-bs-toggle="pill"
-                        data-bs-target="#v-pills-bns"
-                        id="btn-bns"
-                      >
-                        Ban Nhân Sự
-                      </button>
-                      <button
-                        class="nav-link border border-dark rounded text-dark mx-2 disabled"
-                        data-bs-toggle="pill"
-                        data-bs-target="#v-pills-btt"
-                        id="btn-btt"
-                      >
-                        Ban Truyền Thông
-                      </button>
-                      <button
-                        class="nav-link border border-dark rounded text-dark mx-2 disabled"
-                        data-bs-toggle="pill"
-                        data-bs-target="#v-pills-tcsk"
-                        id="btn-tcsk"
-                      >
-                        Ban Tổ Chức Sự Kiện
-                      </button>
+                      <div class="pb-3 px-3">
+                        <button
+                          class="nav-link border border-dark rounded text-dark disabled"
+                          id="btn-bcm"
+                          data-bs-toggle="pill"
+                          data-bs-target="#v-pills-bcm"
+                        >
+                          Ban Chuyên Môn
+                        </button>
+                      </div>
+                      <div class="pb-3 px-3">
+                        <button
+                          class="nav-link border border-dark rounded text-dark disabled"
+                          data-bs-toggle="pill"
+                          data-bs-target="#v-pills-bdn"
+                          id="btn-bdn"
+                        >
+                          Ban Đối Ngoại
+                        </button>
+                      </div>
+                      <div class="pb-3 px-3">
+                        <button class="nav-link border border-dark rounded text-dark disabled" data-bs-toggle="pill" data-bs-target="#v-pills-bns" id="btn-bns">
+                          Ban Nhân Sự
+                        </button>
+                      </div>
+                      <div class="pb-3 px-3">
+                        <button
+                          class="nav-link border border-dark rounded text-dark disabled"
+                          data-bs-toggle="pill"
+                          data-bs-target="#v-pills-btt"
+                          id="btn-btt"
+                        >
+                          Ban Truyền Thông
+                        </button>
+                      </div>
+                      <div class="pb-3 px-3">
+                        <button
+                          class="nav-link border border-dark rounded text-dark disabled"
+                          data-bs-toggle="pill"
+                          data-bs-target="#v-pills-tcsk"
+                          id="btn-tcsk"
+                        >
+                          Ban Tổ Chức Sự Kiện
+                        </button>
+                      </div>
+                      <!-- <div class="col-sm-12 col-md-2"></div> -->
                     </div>
-                    <!-- mỗi tab-pane phải cần có id để button trỏ tới nó; aria là các thuộc tính cho người khiếm thị; có thể xóa các thuộc tính như type, role -->
+                    
+                    <!-- content -->
                     <div class="tab-content" id="v-pills-tabContent">
                       <div class="tab-pane fade" id="v-pills-bcm">
                         <div class="mb-3">
-                            <label for="cauHoiBCM1" class="mb-3">1. Bạn nghĩ như thế nào về nhận định "Chứng khoán là cờ bạc".</label>
+                            <label for="cauHoiBCM1" class="mb-3">1. Xem câu hỏi <a href="/embedded_file/bcm-pdf.pdf" target="_blank" class="tai-day">tại đây</a> và vui lòng điền câu trả lời bằng cách dẫn link google drive</label>
                             <textarea class="form-control" id="cauHoiBCM1" style="height: 100px"></textarea>
                             <div class="noti-error" id="noti-cauHoiBCM1">
-                              <p></p>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="cauHoiBCM2" class="mb-3">2. Bạn nghĩ sao về câu nói “Bull markets are born on pessimism, grow on skepticism, mature on optimism and die on euphoria.” - John Templeton</label>
-                            <textarea class="form-control" id="cauHoiBCM2" style="height: 100px"></textarea>
-                            <div class="noti-error" id="noti-cauHoiBCM2">
                               <p></p>
                             </div>
                         </div>
                       </div>
                       <div class="tab-pane fade" id="v-pills-bdn">
                         <div class="mb-3">
-                            <label for="cauHoiBDN1" class="mb-3">1. Hãy cho biết những tố chất cần có để trở thành 1 thành viên của Ban Đối ngoại? Bạn làm gì để trau dồi các tố chất này?</label>
+                            <label for="cauHoiBDN1" class="mb-3">1. Xem câu hỏi <a href="/embedded_file/bdn-pdf.pdf" target="_blank" class="tai-day">tại đây</a> và vui lòng điền câu trả lời bằng cách dẫn link google drive</label>
                             <textarea class="form-control" id="cauHoiBDN1" style="height: 100px"></textarea>
                             <div class="noti-error" id="noti-cauHoiBDN1">
-                              <p></p>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="cauHoiBDN2" class="mb-3">2. Nếu toàn câu lạc bộ kỳ vọng Ban Đối ngoại phải tìm được 200 triệu tài trợ để lo cho các chi phí của chương trình nhưng Ban chỉ kiếm được 140 triệu thì bạn nghĩ Ban Đối ngoại nên giải quyết như thế nào?</label>
-                            <textarea class="form-control" id="cauHoiBDN2" style="height: 100px"></textarea>
-                            <div class="noti-error" id="noti-cauHoiBDN2">
                               <p></p>
                             </div>
                         </div>
                       </div>
                       <div class="tab-pane fade" id="v-pills-bns">
                         <div class="mb-3">
-                            <label for="cauHoiBNS1" class="mb-3">1. Bạn nghĩ bản thân có yếu tố nào phù hợp với Ban Nhân sự? Là thành viên Ban Nhân sự, bạn sẽ làm gì để những thành viên có tính cách trái ngược nhau làm việc hòa hợp với nhau?</label>
+                            <label for="cauHoiBNS1" class="mb-3">1. Xem câu hỏi <a href="/embedded_file/bns-pdf.pdf" target="_blank" class="tai-day">tại đây</a> và vui lòng điền câu trả lời bằng cách dẫn link google drive</label>
                             <textarea class="form-control" id="cauHoiBNS1" style="height: 100px"></textarea>
                             <div class="noti-error" id="noti-cauHoiBNS1">
-                              <p></p>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="cauHoiBNS2" class="mb-3">2. Bạn nghĩ gì về quan điểm sau: “Nếu như câu lạc bộ của bạn là một chiếc xe, hãy mời những người thích hợp lên xe và những người không thích hợp xuống xe”</label>
-                            <textarea class="form-control" id="cauHoiBNS2" style="height: 100px"></textarea>
-                            <div class="noti-error" id="noti-cauHoiBNS2">
                               <p></p>
                             </div>
                         </div>
                       </div>
                       <div class="tab-pane fade" id="v-pills-btt">
                         <div class="mb-3">
-                            <label for="cauHoiBTT1" class="mb-3">1. Bạn có nhận xét gì về Bộ nhận diện của đợt tuyển nhân sự năm nay? Nếu được thay đổi, bạn sẽ chỉnh sửa những gì?</label>
+                            <label for="cauHoiBTT1" class="mb-3">1. Xem câu hỏi <a href="/embedded_file/btt-pdf.pdf" target="_blank" class="tai-day">tại đây</a> và vui lòng điền câu trả lời bằng cách dẫn link google drive</label>
                             <textarea class="form-control" id="cauHoiBTT1" style="height: 100px"></textarea>
                             <div class="noti-error" id="noti-cauHoiBTT1">
-                              <p></p>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="cauHoiBTT2" class="mb-3">2. Bạn hãy chọn và trả lời 1 trong 2 câu hỏi sau: "Bạn hãy gửi 3 tấm hình tự chụp (hoặc tự design) mà bạn ưng ý nhất và viết content cho 3 tấm hình này" hoặc "Hãy sáng tạo 2 câu thành ngữ, tục ngữ về chủ đề chứng khoán (Ví dụ: Mua mã này, hô mã nọ)"</label>
-                            <textarea class="form-control" id="cauHoiBTT2" style="height: 100px"></textarea>
-                            <div class="noti-error" id="noti-cauHoiBTT2">
                               <p></p>
                             </div>
                         </div>
                       </div>
                       <div class="tab-pane fade" id="v-pills-tcsk">
                         <div class="mb-3">
-                            <label for="cauHoiTCSK1" class="mb-3">1. Theo bạn, Ban Tổ chức sự kiện sẽ thực hiện những công việc gì? Để làm tốt những công việc đó, bạn nghĩ Ban Tổ chức sự kiện sẽ gồm những thành viên có tính cách và tố chất như thế nào?</label>
+                            <label for="cauHoiTCSK1" class="mb-3">1. Xem câu hỏi <a href="/embedded_file/tcsk-pdf.pdf" target="_blank" class="tai-day">tại đây</a> và vui lòng điền câu trả lời bằng cách dẫn link google drive</label>
                             <textarea class="form-control" id="cauHoiTCSK1" style="height: 100px"></textarea>
                             <div class="noti-error" id="noti-cauHoiTCSK1">
-                              <p></p>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="cauHoiTCSK2" class="mb-3">2. Giả sử bạn là thành viên ban Tổ chức sự kiện và bạn đang phải lên kế hoạch cho đêm Gala Night, theo bạn đâu sẽ những tiêu chí để khán giả đánh giá sự chuyên nghiệp của Ban Tổ chức?</label>
-                            <textarea class="form-control" id="cauHoiTCSK2" style="height: 100px"></textarea>
-                            <div class="noti-error" id="noti-cauHoiTCSK2">
                               <p></p>
                             </div>
                         </div>
@@ -558,7 +528,7 @@
     <footer class="footer">
       <div class="container">
         <h4>CLB Tài chính - Chứng khoán SeSC</h4>
-        <p>Thành lập vào ngày 01/04/2010, CLB Tài chính - Chứng khoán SeSC là CLB đầu tiên và duy nhất của ĐH Ngoại Thương TPHCM hoạt động trong lĩnh vực Tài chính - Chứng khoán. Với sứ mệnh phổ cập tri thức tài chính cho cộng đồng, Chúng Tôi cam kết không ngừng nâng cao chất lượng hoạt động, tiếp tục là bệ phóng cho các tài năng trong lĩnh vực Tài chính - Chứng khoán trong nhiều năm nữa.</p>
+        <p>Thành lập vào ngày 01/04/2010, CLB Tài chính - Chứng khoán SeSC là CLB đầu tiên và duy nhất của ĐH Ngoại Thương TPHCM hoạt động trong lĩnh vực Tài chính - Chứng khoán. Với sứ mệnh phổ cập tri thức tài chính cho cộng đồng, chúng tôi cam kết không ngừng nâng cao chất lượng hoạt động, tiếp tục là bệ phóng cho các tài năng trong lĩnh vực Tài chính - Chứng khoán trong nhiều năm nữa.</p>
         <div class="icons">
           <a href="https://www.facebook.com/CaulacboChungKhoanSeSC" target="_blank"><i class="fab fa-facebook"></i></a>
           <a href="https://www.linkedin.com/company/sesc-ftu2/mycompany/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -569,7 +539,9 @@
     </footer>
     <div class="overlayModal">
     </div>
-    <div class="loader"></div>
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script
@@ -596,27 +568,26 @@
       window.onscroll = function () {
         if (window.pageYOffset >= 300) {
           header.classList.add("sticky");
-          document.querySelector("body > section > div > h2").style.display =
+          document.querySelector("body > header > div > div").style.display =
             "none";
           imgLogo.src = "/SeSC/Logo_small.jpg";
           imgLogo.style = "width: 50%; border-radius: 100px;";
         } else {
           header.classList.remove("sticky");
-          document.querySelector("body > section > div > h2").style.display =
+
+          if(document.getElementById("navbarNav").className == "navbar-collapse justify-content-end navMenu collapse show") {
+            document.querySelector("body > header > div > div").style.display =
+            "none";
+          } else {
+            document.querySelector("body > header > div > div").style.display =
             "block";
+          }
+
           imgLogo.src = "/SeSC/Logo_small_trans.png";
           imgLogo.style = "width: 70%;";
         }
       };
     </script>
-
-    <!-- Axios Librabry -->
-    <!-- <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
-      integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script> -->
 
     <!-- SheetDb Librabry -->
     <script src="//sheetdb.io/api/js"></script>
