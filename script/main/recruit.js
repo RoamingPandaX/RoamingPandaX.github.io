@@ -7,7 +7,7 @@ document.getElementById("btn-dropDownMenu").onclick = () => {
 }
 
 // Set the date we're counting down to
-var countDownDate = new Date("Nov 20, 2022 00:00:00").getTime();
+var countDownDate = new Date("Oct 30, 2022 23:59:59").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {

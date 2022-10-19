@@ -288,24 +288,7 @@ getInputById("submit").onclick = () => {
         isValid &= validity.nullCheck(thongTinCaNhan.email,"noti-email","(*) Vui lòng nhập email");
         isValid &= validity.nullCheck(thongTinCaNhan.linkFb,"noti-linkFb","(*) Vui lòng nhập link facebook");
         // check the availability of maSV
-        var i = 0;
         var n = 0;
-        if(thongTinCaNhan.maSV!="") {
-            while(i<result.length) {
-                if(result[i]["Mã SV"]==thongTinCaNhan.maSV) {
-                    document.getElementById("noti-maSV").style.display = "block";
-                    document.getElementById("noti-maSV").innerHTML = "<p>(*) Mã sinh viên này đã tồn tại. Vui lòng nhập mã sinh viên khác</p>";
-                    isValid = false;
-                    break;
-                } else {
-                    document.getElementById("noti-maSV").style.display = "none";
-                    document.getElementById("noti-maSV").innerHTML = "<p></p>";
-                    isValid &= true;
-                }
-                i++;
-            }
-        }
-
         if(thongTinCaNhan.email!="") {
             while(n<result.length) {
                 if(result[n]["Email"]==thongTinCaNhan.email) {
