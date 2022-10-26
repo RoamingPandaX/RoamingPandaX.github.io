@@ -275,7 +275,7 @@ getInputById("submit").onclick = () => {
     document.getElementsByClassName("overlayModal")[0].style.display = "block";
     document.getElementsByClassName("loader-container")[0].style.display = "block";
 
-    SheetDB.read('https://sheetdb.io/api/v1/bnjw1767itnei', {sheet: "Sheet1"}).then(function(result){
+    SheetDB.read('https://sheetdb.io/api/v1/dv7ci5f403up5', {sheet: "Sheet1"}).then(function(result){
         document.getElementsByClassName("overlayModal")[0].style.display = "none";
         document.getElementsByClassName("loader-container")[0].style.display = "none";
         // Null Check
@@ -347,7 +347,7 @@ getInputById("submit").onclick = () => {
             
             // write on the sheet
             SheetDB.write(
-                'https://sheetdb.io/api/v1/bnjw1767itnei',
+                'https://sheetdb.io/api/v1/dv7ci5f403up5',
                 {
                     sheet: 'Sheet1',
                     data: {
